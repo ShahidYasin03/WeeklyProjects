@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekly Project 1</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+
+    <!-- <div id="circle"></div> -->
+
+    <div class="nav-bar">
+      <div class="nav-logo">
+        <h1>Dreamer AI</h1>
+      </div>
+      <div class="nav-elements">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <a href="index.html">Services</a>
+        <a href="index.html">Explore</a>
+        <a href="index.html">Portfolio</a>
+        <a href="index.html">Blog</a>
+        <a href="index.html">Contact</a>
+      </div>
+    </div>
+
+    <div class="main">
+      <div id="left">
+        <h1>DREAMER</h1>
+      </div>
+      <div id="middle">
+        <h3 class="aboutme" style="color: rgb(13, 186, 255);">--------Welcome to Dreamer</h3>
+        <h1 class="aboutme">Hi I am <span style="color: rgb(13, 186, 255);">Jane</span> Doe</h1>
+        <h2 class="aboutme">Web Developer</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
+          sunt hic iusto, numquam natus aut, saepe cum, fuga illo maiores
+          nesciunt praesentium facere at ad fugitr!
+        </p>
+        <div class="btns">
+            <button id="moreMe">More About Me</button>
+            <button class="socials"><i class="fa-brands fa-facebook-f"></i></button>
+            <button id="linkedin" class="socials"><i class="fa-brands fa-linkedin-in"></i></button>
+            <button class="socials"><i class="fa-brands fa-twitter"></i></button>
+        </div>
+      </div>
+      <div id="right">
+        <img src="1x/JaneDoe.png" alt="janeDoe">
+      </div>
+    </div>
+
+
+
+
+
+    <!-- For the circle that follow cursor -->
+    <script>
+        const circle = document.getElementById('circle');
+        circle.style.position = 'absolute';
+        circle.style.transition = 'left 0.1s ease, top 0.1s ease';
+        document.addEventListener('mousemove', (e) => {
+            circle.style.left = `${e.pageX}px`;
+            circle.style.top = `${e.pageY}px`;
+
+            setInterval(function(){
+            xp += ((mouseX - xp)/6);
+            yp += ((mouseY - yp)/6);
+            $("#circle").css({left: xp +'px', top: yp +'px'});
+        }, 20);
+
+        });
+    </script>
+
+  </body>
+</html>

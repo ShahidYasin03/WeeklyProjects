@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cursor follow */
+#circle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(13, 186, 255);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+.main {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: #071F4E;
+    background: linear-gradient(134deg, rgba(7, 31, 78, 1) 25%, rgba(36, 10, 58, 1) 90%);
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar {
+    height: 80px;
+    width: 100%;
+    padding: 0 260px;
+    background-color: rgb(0, 36, 107);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-logo h1 {
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+.nav-elements {
+    height: 100%;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-elements a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 10px 14px;
+    cursor: pointer;
+    transition: all ease-in-out 0.25s;
+}
+
+.nav-elements a:hover {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.main #left {
+    height: 100%;
+    width: 260px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main #left h1 {
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 100px;
+    writing-mode: vertical-rl; /* or vertical-lr */
+    transform: rotate(180deg); /* optional, flips the direction */
+    cursor: none;
+    transition: all ease-in-out 0.25s;
+}
+
+.main #left h1:hover {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 100px;
+}
+
+.main #middle {
+    height: 100%;
+    width: 450px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+#middle h3 {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+#middle h1 {
+    font-size: 56px;
+}
+
+#middle h2 {
+    font-size: 28px;
+}
+
+#middle p {
+    line-height: 24px;
+    font-size: 14px;
+    margin: 10px 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.aboutme{
+    margin-bottom: 16px;
+
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+
+#moreMe {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 32px;
+    background-color: #00091b;
+    color: rgb(13, 186, 255);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#moreMe:hover {
+    background-color: #001236;
+}
+
+.socials {
+    height: 34px;
+    width: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: rgb(13, 186, 255);
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: #00091b;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all ease-in-out 0.15s;
+}
+.socials:hover {
+    background-color: #001236;
+}
+
+#linkedin {
+    color: white;
+    background-color: rgb(13, 186, 255);
+    font-size: 16px;
+    transition: all ease-in-out 0.15s;
+}
+
+#linkedin:hover {
+    background-color: rgb(0, 14, 143);
+}
+
+.main #right{
+    height: 100%;
+    width: 800px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#right img {
+    width: 580px;
+    margin-left: 80px;
+    transition: all ease-in-out 0.14s;
+}
+
+#right img:hover {
+    scale: 1.02;
+}
