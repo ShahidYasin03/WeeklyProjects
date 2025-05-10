@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weekly Project 1</title>
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-
     <!-- <div id="circle"></div> -->
- 
+
     <div class="nav-bar">
       <div class="nav-logo">
         <h1>Dreamer AI</h1>
@@ -31,8 +36,12 @@
         <h1>DREAMER</h1>
       </div>
       <div id="middle">
-        <h3 class="aboutme" style="color: rgb(13, 186, 255);">--------Welcome to Dreamer</h3>
-        <h1 class="aboutme">Hi I am <span style="color: rgb(13, 186, 255);">Jane</span> Doe</h1>
+        <h3 class="aboutme" style="color: rgb(13, 186, 255)">
+          --------Welcome to Dreamer
+        </h3>
+        <h1 class="aboutme">
+          Hi I am <span style="color: rgb(13, 186, 255)">Jane</span> Doe
+        </h1>
         <h2 class="aboutme">Web Developer</h2>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
@@ -40,14 +49,18 @@
           nesciunt praesentium facere at ad fugitr!
         </p>
         <div class="btns">
-            <button id="moreMe">More About Me</button>
-            <button class="socials"><i class="fa-brands fa-facebook-f"></i></button>
-            <button id="linkedin" class="socials"><i class="fa-brands fa-linkedin-in"></i></button>
-            <button class="socials"><i class="fa-brands fa-twitter"></i></button>
+          <button id="moreMe">More About Me</button>
+          <button class="socials">
+            <i class="fa-brands fa-facebook-f"></i>
+          </button>
+          <button id="linkedin" class="socials">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </button>
+          <button class="socials"><i class="fa-brands fa-twitter"></i></button>
         </div>
       </div>
       <div id="right">
-        <img src="1x/JaneDoe.png" alt="janeDoe">
+        <img src="1x/JaneDoe.png" alt="janeDoe" />
       </div>
     </div>
 
@@ -55,37 +68,88 @@
       <h1>What I do?</h1>
       <div class="lines">
         <div class="line"></div>
-        <div class="line" style="width: 60px;"></div>
+        <div class="line" style="width: 60px"></div>
         <div class="line"></div>
       </div>
       <div class="container">
-        <div class="blks"></div>
-        <div class="blks"></div>
-        <div class="blks"></div>
-        <div class="blks"></div>
-        <div class="blks"></div>
-        <div class="blks"></div>
+        <div class="blks">
+          <div class="headingIcon">
+            <i class="fa-solid fa-display"></i>
+            <h5>UI / UX Designer</h5>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet contetur, adipisicing elit. Iama Tempora
+            qui non dolor nihil magni quam quisquam.
+          </p>
+        </div>
+        <div class="blks">
+          <div class="headingIcon">
+            <i class="fa-solid fa-terminal"></i>
+            <h5>Programmer</h5>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet contetur, adipisicing elit. Iama Tempora
+            qui non dolor nihil magni quam quisquam.
+          </p>
+        </div>
+        <div class="blks">
+          <div class="headingIcon">
+            <i class="fa-solid fa-code"></i>
+            <h5>Expert Debugger</h5>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet contetur, adipisicing elit. Iama Tempora
+            qui non dolor nihil magni quam quisquam.
+          </p>
+        </div>
+        <div class="blks">
+          <div class="headingIcon">
+            <i class="fa-solid fa-puzzle-piece"></i>
+            <h5>Problem Solver</h5>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet contetur, adipisicing elit. Iama Tempora
+            qui non dolor nihil magni quam quisquam.
+          </p>
+        </div>
+        <div class="blks">
+          <div class="headingIcon">
+            <i class="fa-solid fa-hat-cowboy"></i>
+            <h5>Cyber Security</h5>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet contetur, adipisicing elit. Iama Tempora
+            qui non dolor nihil magni quam quisquam.
+          </p>
+        </div>
+        <div class="blks">
+          <div class="headingIcon">
+            <i class="fa-solid fa-camera"></i>
+            <h5>Photographer</h5>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet contetur, adipisicing elit. Iama Tempora
+            qui non dolor nihil magni quam quisquam.
+          </p>
+        </div>
       </div>
     </div>
 
-
     <!-- For the circle that follow cursor -->
     <script>
-        const circle = document.getElementById('circle');
-        circle.style.position = 'absolute';
-        circle.style.transition = 'left 0.1s ease, top 0.1s ease';
-        document.addEventListener('mousemove', (e) => {
-            circle.style.left = `${e.pageX}px`;
-            circle.style.top = `${e.pageY}px`;
+      const circle = document.getElementById("circle");
+      circle.style.position = "absolute";
+      circle.style.transition = "left 0.1s ease, top 0.1s ease";
+      document.addEventListener("mousemove", (e) => {
+        circle.style.left = `${e.pageX}px`;
+        circle.style.top = `${e.pageY}px`;
 
-            setInterval(function(){
-            xp += ((mouseX - xp)/6);
-            yp += ((mouseY - yp)/6);
-            $("#circle").css({left: xp +'px', top: yp +'px'});
+        setInterval(function () {
+          xp += (mouseX - xp) / 6;
+          yp += (mouseY - yp) / 6;
+          $("#circle").css({ left: xp + "px", top: yp + "px" });
         }, 20);
-
-        });
+      });
     </script>
-
   </body>
 </html>
