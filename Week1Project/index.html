@@ -14,7 +14,6 @@
     />
   </head>
   <body>
-    <!-- <div id="circle"></div> -->
 
     <div class="nav-bar">
       <div class="nav-logo">
@@ -135,21 +134,5 @@
       </div>
     </div>
 
-    <!-- For the circle that follow cursor -->
-    <script>
-      const circle = document.getElementById("circle");
-      circle.style.position = "absolute";
-      circle.style.transition = "left 0.1s ease, top 0.1s ease";
-      document.addEventListener("mousemove", (e) => {
-        circle.style.left = `${e.pageX}px`;
-        circle.style.top = `${e.pageY}px`;
-
-        setInterval(function () {
-          xp += (mouseX - xp) / 6;
-          yp += (mouseY - yp) / 6;
-          $("#circle").css({ left: xp + "px", top: yp + "px" });
-        }, 20);
-      });
-    </script>
   </body>
 </html>
